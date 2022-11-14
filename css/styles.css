@@ -236,10 +236,6 @@ label .polici-blue {
 
 /* Styling Logo */
 
-.logo-index {
-  text-decoration: none;
-}
-
 .logo {
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -248,17 +244,20 @@ label .polici-blue {
   color: var(--accent-color);
   margin-top: 0;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
-.logo-white {
+.logo__web {
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
   color: #000000;
+  text-decoration: none;
 }
 .logo-studio {
+  text-decoration: none;
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
@@ -267,8 +266,8 @@ label .polici-blue {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.logo-white:hover,
-.logo-white:focus {
+.logo__web:hover,
+.logo__web:focus {
   color: var(--accent-color);
 }
 
@@ -282,6 +281,9 @@ label .polici-blue {
 .logo-studio:focus {
   color: var(--accent-color);
 }
+.footer-logo {
+  text-decoration: none;
+}
 
 /* main Portfolio */
 
@@ -289,12 +291,12 @@ label .polici-blue {
 
 /* mein nav */
 
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.site-nav .nav-lyst {
+.navigation .navigation__link {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -308,30 +310,29 @@ label .polici-blue {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.site-nav .nav-lyst:hover,
-.site-nav .nav-lyst:focus {
+.navigation .navigation__link:hover,
+.navigation .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.site-nav {
+.navigation {
   margin-left: 93px;
   display: flex;
 }
 
-.site-nav .nav-item:not(:last-child) {
+.navigation .navigation__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .blue-color {
-  color: var(--accent-color);
-}
 /* ----------underline------------- */
 
-.nav-underline {
+.navigation .navigation__link--current {
   position: relative;
+  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.nav-underline::after {
+.navigation__link--current::after {
   content: "";
 
   position: absolute;
@@ -346,7 +347,7 @@ label .polici-blue {
 }
 
 /* ----------contact---------- */
-.site-nav-contact {
+.contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -355,22 +356,26 @@ label .polici-blue {
   display: flex;
 }
 
-.site-nav-contact .nav-item:not(:last-child) {
+.contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav-contact .nav-item {
+.navigation__list {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.contact__link {
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-.site-nav-envelopes {
+.contact__icon--envelope {
   fill: currentColor;
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.site-nav-smartphone {
+.contact__icon--smartphone {
   fill: currentColor;
   width: 10px;
   height: 16px;
@@ -380,20 +385,14 @@ label .polici-blue {
 
 /* style contact */
 
-.site-nav-mail,
-.site-nav-tel {
+.contact__link {
   text-decoration: none;
   color: var(--main-color-text);
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.site-nav-mail:hover,
-.site-nav-mail:focus {
-  color: var(--accent-color);
-}
-
-.site-nav-tel:hover,
-.site-nav-tel:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
