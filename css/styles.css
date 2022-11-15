@@ -88,7 +88,7 @@ textarea {
   color: #000000;
   text-decoration: none;
 }
-.logo-studio {
+.footer__logo {
   text-decoration: none;
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -109,8 +109,8 @@ textarea {
   color: var(--accent-color);
 }
 
-.logo-studio:hover,
-.logo-studio:focus {
+.footer__logo:hover,
+.footer__logo:focus {
   color: var(--accent-color);
 }
 .footer-logo {
@@ -508,24 +508,37 @@ label .polici-blue {
 }
 
 /*-------------------ОСОБЛИВОСТІ features  -------------- */
-.section {
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #ffffff;
   color: var(--title-color);
 }
-.features {
+.features__list {
   justify-content: space-between;
   color: var(--title-color);
   display: flex;
   flex-wrap: wrap;
 }
 
-.features .features-about {
+.features__item {
   width: 270px;
 }
 
-.features-pictures {
+.features__icon {
   width: 270px;
   height: 120px;
   padding: 25px;
@@ -533,14 +546,14 @@ label .polici-blue {
   background: #f5f4fa;
 }
 
-.features-title {
+.features__title {
   margin-top: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 
-.title {
+.features__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -549,14 +562,16 @@ label .polici-blue {
   margin-bottom: 0;
 }
 
-/* ----------------------------------------- */
-/*----------- section ----------*/
+/*----------- Чим ми займаємося benefits ----------*/
 
-.team {
-  background-color: #f5f4fa;
+.benefits {
+  padding-top: 0;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  color: var(--title-color);
 }
 
-.section-title {
+.benefits__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -566,20 +581,16 @@ label .polici-blue {
   margin-bottom: 50px;
 }
 
-.section-top {
-  padding-top: 0;
-}
-
-.work {
+.benefits__list {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
-/* --------------Наїзд на картинку------------ */
-.work-list {
+/* -------------- Наїзд на картинку benefits------------ */
+.benefits__item {
   position: relative;
 }
-.work-title {
+.benefits__text {
   position: absolute;
 
   bottom: 0;
@@ -594,15 +605,31 @@ label .polici-blue {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
+/* ------------Наша Команда------------- */
 
-.section-about {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: var(--title-color);
+  background-color: #f5f4fa;
+}
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team__list {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   height: 428px;
 }
 
-.sectiont-social-list {
+.team-card {
   width: 270px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -610,19 +637,19 @@ label .polici-blue {
   border-radius: 0px 0px 4px 4px;
 }
 
-.social-ul {
+.team-social {
   padding: 0;
   margin: 0;
 }
 
-.social-work {
+.team-social__item {
   justify-content: center;
   margin: 0;
   padding: 0;
   display: flex;
 }
 
-.social-item {
+.team-social__link {
   padding: 0;
   border: 0;
   background-color: #ffffff;
@@ -634,31 +661,19 @@ label .polici-blue {
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 
-.social-item:hover {
+.team-social__link:hover {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.section-social:hover {
-}
-
-.section-social {
+.team-section__icon {
   margin: 12px;
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.section-title-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.section-list {
+.team-card__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -667,7 +682,7 @@ label .polici-blue {
   margin-bottom: 10px;
 }
 
-.section-profession {
+.team-card__profession {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -675,6 +690,224 @@ label .polici-blue {
   color: var(--main-color-text);
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+/* -------------Постійні клієнти------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  color: var(--title-color);
+}
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  color: var(--title-color);
+}
+.client__title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.client__list {
+  padding: 0;
+  margin: 0;
+}
+
+.client__item {
+  justify-content: space-between;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.client__link {
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+}
+
+.client__icon {
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
+}
+.client__icon:hover {
+  fill: var(--accent-color);
+  border: solid 1px var(--accent-color);
+}
+
+/* ------------Footer styling------------ */
+
+.footer {
+  padding: 60px 0;
+  background: #2f303a;
+}
+.footer-container {
+  display: flex;
+}
+
+.footer-address {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.footer-addres__item {
+  margin-bottom: 9px;
+}
+
+.footet-addres__top {
+  margin-top: 20px;
+}
+
+.footer-address__link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.footer-address__link:hover,
+.footer-address__link:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------Приєднуйтесь----------------- */
+.footer-join {
+  margin-left: 70px;
+}
+
+.footer-join__list {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-join__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-join__list--item {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+}
+
+.footer-join__link {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+.footer-join__link:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-join__icon {
+  margin: 12px;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+/* -----------------Footer Form Підпишіться---------------- */
+.footer-subscribe {
+  margin-left: 103px;
+}
+.footer-subscribe__title {
+  width: 207px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-subscribe__list {
+  display: flex;
+}
+.footer-subscribe__position {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-subscribe__input {
+  padding: 15px 16px;
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  transition: border 250ms var(--cubic);
+}
+.footer-subscribe__input:focus {
+  outline: none;
+  border-radius: 4px;
+  border: solid 1px var(--accent-color);
+}
+
+.footer-form__button {
+  padding-top: 10px;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent-color);
+
+  border-radius: 4px;
+  border: currentColor;
+
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ffffff;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+.footer-form__button:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+.footer-form__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 /* ------------Особливості до портфоліо ------------ */
@@ -822,225 +1055,4 @@ label .polici-blue {
   color: var(--main-color-text);
   margin-top: 0;
   margin-bottom: 0;
-}
-
-/* -------------Постійні клієнти------------- */
-
-.client-title {
-  color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.client-ul {
-  padding: 0;
-  margin: 0;
-}
-
-.client-list {
-  justify-content: space-between;
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
-.client-tutorial {
-  transition: color 250ms var(--cubic), border 250ms var(--cubic);
-}
-
-.client-about {
-  padding: 16px 32px;
-  width: 170px;
-  height: 92px;
-  fill: #afb1b8;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
-}
-.client-about:hover {
-  fill: var(--accent-color);
-  border: solid 1px var(--accent-color);
-}
-
-/* ------------Footer styling------------ */
-
-.footer {
-  padding: 60px 0;
-  background: #2f303a;
-}
-
-.maps {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #ffffff;
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
-
-.address {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-style: normal;
-}
-
-.addres-about {
-  margin-bottom: 9px;
-}
-
-.addres-top {
-  margin-top: 20px;
-}
-
-.address-title {
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
-
-.maps:hover,
-.maps:focus {
-  color: var(--accent-color);
-}
-
-.address-title:hover,
-.address-title:focus {
-  color: var(--accent-color);
-}
-/* -----------------JOIN--------------- */
-.join {
-  margin-left: 70px;
-}
-
-.join-ul {
-  padding: 0;
-  margin: 0;
-}
-
-.join-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.footer-title {
-  display: flex;
-}
-
-.join-list {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-}
-
-.join-button {
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: 0;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
-.join-button:hover {
-  background-color: var(--accent-color);
-}
-
-.join-icon {
-  margin: 12px;
-  width: 20px;
-  height: 20px;
-  fill: #ffffff;
-}
-/* ---------------Footer Form---------------- */
-.footer-form {
-  margin-left: 103px;
-}
-.footer-form-title {
-  width: 207px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.footer-form-about {
-  display: flex;
-}
-.footer-form-list {
-  width: 358px;
-  height: 50px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-.footer-label {
-}
-.footer-input {
-  padding: 15px 16px;
-  width: 100%;
-  outline: none;
-  border-radius: 4px;
-
-  background-color: #2f303a;
-  color: rgba(255, 255, 255, 0.6);
-  border: none;
-  transition: border 250ms var(--cubic);
-}
-.footer-input:focus {
-  outline: none;
-  border-radius: 4px;
-  border: solid 1px var(--accent-color);
-}
-
-.footer-form-button {
-  padding-top: 10px;
-  margin-left: 12px;
-  width: 200px;
-  height: 50px;
-
-  background: var(--accent-color);
-
-  border-radius: 4px;
-  border: currentColor;
-
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-
-  color: #ffffff;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-
-  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
-}
-.footer-form-button:hover {
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
-.footer-icon {
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
 }
