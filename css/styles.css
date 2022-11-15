@@ -28,175 +28,7 @@ img {
 textarea {
   resize: none;
 }
-
-.group-title {
-  font-weight: 700;
-  margin: 40px 40px 30px 40px;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-}
-
-.form {
-  padding: 0;
-  margin: 0;
-  width: 528px;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-.form-field {
-  position: relative;
-  margin-bottom: 28px;
-  padding: 0px 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.form-field-comment {
-  margin-right: auto;
-  position: absolute;
-
-  top: -22px;
-}
-.form-field-list {
-  bottom: 37px;
-
-  position: absolute;
-  margin-right: auto;
-}
-.form-field input {
-  outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 10px 20px;
-  padding-left: 42px;
-  margin: 0px;
-}
-.form-field input:hover {
-  /* border: 1px solid var(--accent-color); */
-  cursor: pointer;
-}
------ .form-field label {
-  margin-bottom: 0px;
-}
-label .polici-blue {
-  color: var(--accent-color);
-}
-
-.form-field input:focus {
-  transition: border 250ms var(--cubic);
-
-  border: 1px solid var(--accent-color);
-}
-.form-field textarea:focus {
-  outline: none;
-  background-origin: border-box;
-  border: 1px solid var(--accent-color);
-  transition: border 250ms var(--cubic);
-}
-
-.comment {
-  padding: 12px 16px;
-  height: 120px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.checkbox:checked {
-}
-/* .form-icon {
-  width: 16px;
-  height: 15px;
-
-  display: inline-block;
-  position: absolute;
-  margin-top: 4px;
-  left: 49px;
-} */
-.checkbox:checked + .form-icon {
-}
-.form-icon-svg {
-  border: solid 2px #212121;
-  border-radius: 2px;
-  display: inline-block;
-  position: absolute;
-  margin-top: 4px;
-  left: 49px;
-  width: 16px;
-  height: 15px;
-  fill: #ffffff;
-  transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
-}
-.form-field:focus-within {
-  transition: fill 10ms var(--cubic);
-  fill: var(--accent-color);
-}
-.checkbox:checked + .form-icon-svg {
-  outline: none;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  fill: #ffffff;
-  border: solid 1px var(--accent-color);
-  background-size: contain;
-  background-origin: border-box;
-}
-.polisi-title {
-}
-.checkbox {
-  /* -webkit-appearance: none;
-  position: absolute; */
-  top: 5px;
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.form-field-button {
-  width: 200px;
-  height: 50px;
-  background-color: var(--accent-color);
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: currentColor;
-  cursor: pointer;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-
-  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
-}
-.form-field-button:hover {
-  background-color: #188ce8;
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
-.form-svg {
-}
-.form-svg {
-  margin-left: 14px;
-  margin-top: 10px;
-
-  position: absolute;
-  width: 18px;
-  height: 18px;
-
-  transition: fill 250ms var(--cubic);
-}
-
+/* ------------------------------------------- */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -205,7 +37,7 @@ label .polici-blue {
   padding-right: 15px;
 }
 
-/* Утиліт для скидування точок */
+/* -----------Утиліт для скидування точок--------- */
 .lyst {
   text-decoration: none;
   list-style: none;
@@ -324,7 +156,7 @@ label .polici-blue {
   margin-right: 50px;
 }
 
-/* ----------underline------------- */
+/* ----------------underline---------------- */
 
 .navigation .navigation__link--current {
   position: relative;
@@ -346,7 +178,7 @@ label .polici-blue {
   border-radius: 2px;
 }
 
-/* ----------contact---------- */
+/* --------------contact------------- */
 .contact {
   font-weight: 500;
   font-size: 14px;
@@ -383,8 +215,6 @@ label .polici-blue {
   margin-top: -2px;
 }
 
-/* style contact */
-
 .contact__link {
   text-decoration: none;
   color: var(--main-color-text);
@@ -396,7 +226,7 @@ label .polici-blue {
   color: var(--accent-color);
 }
 
-/* hero styles */
+/* -------------------hero styles-------------------- */
 
 .hero-block {
   display: flex;
@@ -416,7 +246,7 @@ label .polici-blue {
     url(../images/Imghero1.jpg);
 }
 
-.section-bissnes {
+.hero__tittle {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -426,7 +256,7 @@ label .polici-blue {
   color: #ffffff;
 }
 
-.hero-button {
+.hero__button {
   display: inline-block;
   width: 215px;
   height: 50px;
@@ -448,7 +278,7 @@ label .polici-blue {
   transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
-.hero-button:hover {
+.hero__button:hover {
   background-color: #188ce8;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -470,11 +300,11 @@ label .polici-blue {
   opacity: 0;
   pointer-events: none;
 }
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .modal-hero {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal {
+.modal-hero {
   position: absolute;
 
   width: 528px;
@@ -491,22 +321,16 @@ label .polici-blue {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close {
+.form-modal__button--close {
   color: black;
   margin: 0;
   padding: 0;
   border: none;
-  /* 
-  background-image: url(../images/close-black-1.svg); */
-  /* background-position: center;
-  background-repeat: no-repeat;
-   */
   background-color: #ffffff;
-
   transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 
-.my-svg {
+.form-modal__icon--close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -520,13 +344,176 @@ label .polici-blue {
   padding: 4px;
 }
 
-.modal-button-close:hover {
+.form-modal__button--close:hover {
   color: var(--accent-color);
   fill: #188ce8;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-/* features styling */
+
+/* -------------Modal Form-------------- */
+
+.form-modal__tittle {
+  font-weight: 700;
+  margin: 40px 40px 30px 40px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.modal-form {
+  padding: 0;
+  margin: 0;
+  width: 528px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-modal__field {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-modal__field--comment {
+  margin-right: auto;
+  position: absolute;
+
+  top: -22px;
+}
+.form-field__list {
+  bottom: 37px;
+
+  position: absolute;
+  margin-right: auto;
+}
+.form-modal__field input {
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 10px 20px;
+  padding-left: 42px;
+  margin: 0px;
+}
+.form-modal__field input:hover {
+  /* border: 1px solid var(--accent-color); */
+  cursor: pointer;
+}
+.form-modal__field label {
+  margin-bottom: 0px;
+}
+label .polici-blue {
+  color: var(--accent-color);
+}
+
+.form-modal__field input:focus {
+  transition: border 250ms var(--cubic);
+
+  border: 1px solid var(--accent-color);
+}
+.form-modal__field textarea:focus {
+  outline: none;
+  background-origin: border-box;
+  border: 1px solid var(--accent-color);
+  transition: border 250ms var(--cubic);
+}
+
+.comment {
+  padding: 12px 16px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-policy__icon {
+  border: solid 2px #212121;
+  border-radius: 2px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 4px;
+  left: 49px;
+  width: 16px;
+  height: 15px;
+  fill: #ffffff;
+  transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
+}
+.form-modal__field:focus-within {
+  transition: fill 10ms var(--cubic);
+  fill: var(--accent-color);
+}
+.form-policy__checkbox:checked + .form-policy__icon {
+  outline: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  fill: #ffffff;
+  border: solid 1px var(--accent-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.form-policy__checkbox {
+  /* -webkit-appearance: none;
+  position: absolute; */
+  top: 5px;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.form-field__button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: currentColor;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+.form-field__button:hover {
+  background-color: #188ce8;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+}
+
+.form-modal__icon {
+  margin-left: 14px;
+  margin-top: 10px;
+
+  position: absolute;
+  width: 18px;
+  height: 18px;
+
+  transition: fill 250ms var(--cubic);
+}
+
+/*-------------------ОСОБЛИВОСТІ features  -------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  color: var(--title-color);
+}
 .features {
   justify-content: space-between;
   color: var(--title-color);
@@ -562,13 +549,8 @@ label .polici-blue {
   margin-bottom: 0;
 }
 
-/* section section-title styles */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #ffffff;
-  color: var(--title-color);
-}
+/* ----------------------------------------- */
+/*----------- section ----------*/
 
 .team {
   background-color: #f5f4fa;
@@ -593,7 +575,7 @@ label .polici-blue {
   display: flex;
   flex-wrap: wrap;
 }
-/* --------Наїзд на картинку------ */
+/* --------------Наїзд на картинку------------ */
 .work-list {
   position: relative;
 }
@@ -695,7 +677,7 @@ label .polici-blue {
   margin-bottom: 16px;
 }
 
-/* Особливості Filters  */
+/* ------------Особливості до портфоліо ------------ */
 
 .button .button-lyst {
   font-weight: 500;
@@ -733,7 +715,7 @@ label .polici-blue {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* PORTFOLIO */
+/* --------------PORTFOLIO------------- */
 
 .pf-about {
   display: flex;
@@ -842,7 +824,7 @@ label .polici-blue {
   margin-bottom: 0;
 }
 
-/* --------Постійні клієнти--------- */
+/* -------------Постійні клієнти------------- */
 
 .client-title {
   color: var(--title-color);
@@ -885,7 +867,7 @@ label .polici-blue {
   border: solid 1px var(--accent-color);
 }
 
-/* Footer styling */
+/* ------------Footer styling------------ */
 
 .footer {
   padding: 60px 0;
@@ -935,7 +917,7 @@ label .polici-blue {
 .address-title:focus {
   color: var(--accent-color);
 }
-
+/* -----------------JOIN--------------- */
 .join {
   margin-left: 70px;
 }
@@ -986,7 +968,7 @@ label .polici-blue {
   height: 20px;
   fill: #ffffff;
 }
-
+/* ---------------Footer Form---------------- */
 .footer-form {
   margin-left: 103px;
 }

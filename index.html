@@ -55,31 +55,31 @@
         
     </header>
 
-    <!-------Main------->
+    <!-----------------Main----------------->
   <main>
 
-    <!-------Герой------->
+    <!-----------------Герой----------------->
     
     
         <div class="hero-block">
             
         <section class="hero">
             
-            <h1 class="section-bissnes">Ефективні рішення для вашого бізнесу</h1>
+            <h1 class="hero__tittle">Ефективні рішення для вашого бізнесу</h1>
             
 
-            <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+            <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
             <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
+                <div class="modal-hero">
 
-                    <form class="form js-speaker-form">
-                        <h2 class="group-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <form class="modal-form">
+                        <h2 class="form-modal__tittle">Залиште свої дані, ми вам передзвонимо</h2>
 
-                        <div class="form-field ">
-                            <input class="form-input" type="text" name="name" id="name">
-                            <label class="form-field-list" class="form-label" for="name">Ім'я</label>
+                        <div class="form-modal__field ">
+                            <input  type="text" name="name" id="name">
+                            <label class="form-field__list"  for="name">Ім'я</label>
 
-                            <svg class="form-svg">
+                            <svg class="form-modal__icon">
                                 <use href="./images/icons.svg#icon-person-black">
 
                                 </use>
@@ -89,11 +89,11 @@
                         </div>
                     
                     
-                        <div class="form-field ">
+                        <div class="form-modal__field ">
                             <input type="text" name="tel" id="tel">
-                            <label class="form-field-list" for="tel">Телефон</label>
+                            <label class="form-field__list" for="tel">Телефон</label>
 
-                            <svg class="form-svg">
+                            <svg class="form-modal__icon">
                                 <use href="./images/icons.svg#icon-phone-black">
                             
                                 </use>
@@ -101,11 +101,11 @@
                             
                         </div>
                     
-                        <div class="form-field ">
+                        <div class="form-modal__field ">
                             <input type="email" name="mail" id="mail">
-                            <label class="form-field-list" for="mail">Пошта</label>
+                            <label class="form-field__list" for="mail">Пошта</label>
 
-                            <svg class="form-svg">
+                            <svg class="form-modal__icon">
                                 <use href="./images/icons.svg#icon-email-black">
                             
                                 </use>
@@ -115,32 +115,31 @@
                     
                     
                     
-                        <div class="form-field ">
-                            <label class="form-field-comment" for="comment">Коментар</label>
+                        <div class="form-modal__field ">
+                            <label class="form-modal__field--comment" for="comment">Коментар</label>
                             <textarea class="comment" name="comment" id="comment" cols="" rows="8" placeholder="Введіть текст"></textarea>
                         </div>
                     
-                        <div class="form-field">
+
+                        <div class="form-modal__field">
                             
-                            
-                            <label class="polisi-title" for="policy"> 
-                             <input class="checkbox" type="checkbox" name="policy" id="policy">
-                                <svg class="form-icon-svg">
+                            <label  for="policy"> 
+                             <input class="form-policy__checkbox" type="checkbox" name="policy" id="policy">
+                                <svg class="form-policy__icon">
                                     <use href="./images/icons-check.svg#icon-icon-check-2"></use>
                                 </svg>
-                                <span class="form-icon"></span>
                                  Погоджуюся з розсилкою та приймаю <a class="polici-blue" href="">Умови договору</a></label>
                             
                         </div>
                     
-                        <div class="form-field">
-                            <button class="form-field-button" type="submit">Відправити</button>
+                        <div class="form-modal__field">
+                            <button class="form-field__button" type="submit">Відправити</button>
                     
                         </div>
                     </form>
 
-                    <button class="modal-button-close" data-modal-close>
-                        <svg class="my-svg">
+                    <button class="form-modal__button--close" data-modal-close>
+                        <svg class="form-modal__icon--close">
                            <use href="./images/icons-x.svg#icon-close-black-1"</use>
                         </svg>
                     </button>
