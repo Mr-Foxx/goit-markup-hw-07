@@ -693,12 +693,7 @@ label .polici-blue {
 }
 
 /* -------------Постійні клієнти------------- */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: #ffffff;
-  color: var(--title-color);
-}
+
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -910,9 +905,14 @@ label .polici-blue {
   height: 24px;
 }
 
-/* ------------Особливості до портфоліо ------------ */
-
-.button .button-lyst {
+/* ------------Portfolio Filtres ------------ */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #ffffff;
+  color: var(--title-color);
+}
+.portfolio-button__lyst {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -928,35 +928,35 @@ label .polici-blue {
     box-shadow 250ms var(--cubic);
 }
 
-.button {
+.portfolio-button {
   justify-content: center;
 
   margin-bottom: 50px;
   display: flex;
 }
 
-.button-about {
+.portfolio-button__item {
   margin-left: 4px;
   margin-right: 4px;
 }
 
-.button .button-lyst:hover,
-.button .button-lyst:focus {
+.portfolio-button__lyst:hover,
+.portfolio-button__lyst:focus {
   color: #ffffff;
   background-color: var(--accent-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* --------------PORTFOLIO------------- */
+/* --------------Portfolio Card------------- */
 
-.pf-about {
+.portfolio-card {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
 
-.pf-coctent {
+.portfoli-card__title {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -973,28 +973,28 @@ label .polici-blue {
     margin-bottom: 0;
 } */
 
-.pf-product:hover .pf-thumb::before {
+.portfolio-card__link:hover .portfolio-card__item::before {
   transform: translateY(0);
 }
-.pf-product:focus .pf-thumb::before {
+.portfolio-card__link:focus .portfolio-card__item::before {
   transform: translateY(0);
 }
-.pf-product:hover .pf-actions {
+.portfolio-card__link:hover .portfolio-card__info {
   transform: translateY(0);
 }
-.pf-product:focus .pf-actions {
+.portfolio-card__link:focus .portfolio-card__info {
   transform: translateY(0);
 }
-.pf-elements:hover {
+.portfolio-card__list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.pf-thumb {
+.portfolio-card__item {
   position: relative;
   overflow: hidden;
 }
 
-.pf-thumb::before {
+.portfolio-card__item::before {
   display: inline-block;
   content: "";
 
@@ -1007,7 +1007,7 @@ label .polici-blue {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.pf-text {
+.portfolio-card__text {
   margin: 0;
   padding: 63px 24px;
   font-weight: 400;
@@ -1016,7 +1016,7 @@ label .polici-blue {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-.pf-actions {
+.portfolio-card__info {
   display: flex;
 
   align-items: center;
@@ -1032,7 +1032,7 @@ label .polici-blue {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pf-elements {
+.portfolio-card__list {
   width: 370px;
   margin: 15px;
   transition: box-shadow 250ms var(--cubic);
@@ -1040,14 +1040,14 @@ label .polici-blue {
     margin-bottom: 30px; */
 }
 
-.pf-title {
+.portfolio-card__description {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   text-decoration: none;
   color: var(--title-color);
 }
-.pf-lyst {
+.portfolio-card__label {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
