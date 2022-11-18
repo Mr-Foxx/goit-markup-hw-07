@@ -44,7 +44,6 @@ textarea {
   margin: 0;
   padding: 0;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -64,6 +63,10 @@ textarea {
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 /* Styling Logo */
@@ -122,11 +125,6 @@ textarea {
 /* Styling Naw */
 
 /* mein nav */
-
-.header__container {
-  display: flex;
-  align-items: center;
-}
 
 .navigation .navigation__link {
   display: block;
@@ -225,7 +223,7 @@ textarea {
 .contact__link:focus {
   color: var(--accent-color);
 }
-
+/* -----------TUT-------------- */
 /* -------------------hero styles-------------------- */
 
 .hero-block {

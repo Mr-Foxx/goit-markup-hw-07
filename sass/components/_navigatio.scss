@@ -1,0 +1,30 @@
+
+.navigation {
+    margin-left: 93px;
+    display: flex;
+}
+
+
+.navigation__link {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    color: $primari-text-color;
+    transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+
+    &:hover, :focus{
+        color: $accent-color;
+    }
+}
+
+
+
+.navigation__list:not(:last-child) {
+    margin-right: 50px;
+}
