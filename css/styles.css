@@ -223,7 +223,7 @@ textarea {
 .contact__link:focus {
   color: var(--accent-color);
 }
-/* -----------TUT-------------- */
+
 /* -------------------hero styles-------------------- */
 
 .hero-block {
@@ -281,6 +281,8 @@ textarea {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* --------beckdrop--------------- */
 .backdrop {
   position: fixed;
 
@@ -301,7 +303,7 @@ textarea {
 .backdrop.is-hidden .modal-hero {
   transform: translate(-50%, -50%) scale(0.9);
 }
-
+/* --------modal hero-------- */
 .modal-hero {
   position: absolute;
 
@@ -504,7 +506,7 @@ label .polici-blue {
 
   transition: fill 250ms var(--cubic);
 }
-
+/* -----------------------------------TUT---------------------- */
 /*-------------------ОСОБЛИВОСТІ features  -------------- */
 
 .visually-hidden {
