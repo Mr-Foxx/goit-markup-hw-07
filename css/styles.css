@@ -506,7 +506,7 @@ label .polici-blue {
 
   transition: fill 250ms var(--cubic);
 }
-/* -----------------------------------TUT---------------------- */
+
 /*-------------------ОСОБЛИВОСТІ features  -------------- */
 
 .visually-hidden {
@@ -586,6 +586,7 @@ label .polici-blue {
   display: flex;
   flex-wrap: wrap;
 }
+
 /* -------------- Наїзд на картинку benefits------------ */
 .benefits__item {
   position: relative;
@@ -605,6 +606,7 @@ label .polici-blue {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
+
 /* ------------Наша Команда------------- */
 
 .team {
@@ -904,7 +906,7 @@ label .polici-blue {
   width: 24px;
   height: 24px;
 }
-
+/* -----------------------------------TUT---------------------- */
 /* ------------Portfolio Filtres ------------ */
 .portfolio {
   padding-top: 94px;
