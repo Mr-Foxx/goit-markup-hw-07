@@ -38,10 +38,7 @@
     }
 }
 
-// .footer-address__link:hover,
-// .footer-address__link:focus {
-//     color: $accent-color;
-// }
+
 
 /* ----------------Приєднуйтесь----------------- */
 .footer-join {
@@ -85,9 +82,6 @@
     }
 }
 
-// .footer-join__link:hover {
-//     background-color: $accent-color;
-// }
 
 .footer-join__icon {
     margin: 12px;
@@ -135,13 +129,15 @@
     color: rgba(255, 255, 255, 0.6);
     border: none;
     transition: border 250ms $cubic-bezier;
+
+    &:focus{
+        outline: none;
+            border-radius: 4px;
+            border: solid 1px $accent-color;
+    }
 }
 
-.footer-subscribe__input:focus {
-    outline: none;
-    border-radius: 4px;
-    border: solid 1px $accent-color;
-}
+
 
 .footer-form__button {
     padding-top: 10px;
@@ -165,15 +161,40 @@
     justify-content: center;
 
     transition: background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
+
+    &:hover{
+        cursor: pointer;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
 }
 
-.footer-form__button:hover {
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
 
 .footer-form__icon {
     margin-left: 10px;
     width: 24px;
     height: 24px;
 }
+
+
+
+// .footer-address__link:hover,
+// .footer-address__link:focus {
+//     color: $accent-color;
+// }
+
+
+// .footer-form__button:hover {
+//     cursor: pointer;
+//     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+// }
+
+
+// .footer-subscribe__input:focus {
+//     outline: none;
+//     border-radius: 4px;
+//     border: solid 1px $accent-color;
+// }
+
+// .footer-join__link:hover {
+//     background-color: $accent-color;
+// }

@@ -7,9 +7,15 @@
     border-radius: 4px;
 }
 
-.form-modal__field textarea:focus {
+ textarea:focus {
     outline: none;
     background-origin: border-box;
     border: 1px solid $accent-color;
     transition: border 250ms $cubic-bezier;
 }
+
+// .form-modal__field textarea:focus {
+//     outline: none;
+//     background-origin: border-box;
+//     border: 1px solid $accent-color;
+//     transition: border 250ms $cubic-bezier;

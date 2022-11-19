@@ -29,8 +29,6 @@
 }
 
 .form-policy__checkbox {
-    /* -webkit-appearance: none;
-  position: absolute; */
     top: 5px;
     position: absolute;
 
@@ -63,13 +61,14 @@
     color: $hero-button-color;
 
     transition: background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
+
+    &:hover{
+        background-color: $hero-accent-color;
+            cursor: pointer;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    }
 }
 
-.form-field__button:hover {
-    background-color: $hero-accent-color;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
 
 .form-modal__icon {
     margin-left: 14px;
@@ -81,3 +80,9 @@
 
     transition: fill 250ms $cubic-bezier;
 }
+
+// .form-field__button:hover {
+//     background-color: $hero-accent-color;
+//     cursor: pointer;
+//     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+// }

@@ -24,6 +24,14 @@
     border: none;
     background-color: $hero-button-color;
     transition: color 250ms $cubic-bezier, border 250ms $cubic-bezier;
+
+    &:hover {
+
+        color: $accent-color;
+            fill: $hero-accent-color;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+    }
 }
 
 .form-modal__icon--close {
@@ -38,11 +46,13 @@
     fill: currentColor;
 
     padding: 4px;
+
+    
 }
 
-.form-modal__button--close:hover {
-    color: $accent-color;
-    fill: $hero-accent-color;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
+// .form-modal__button--close:hover {
+//     color: $accent-color;
+//     fill: $hero-accent-color;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     cursor: pointer;
+// }
