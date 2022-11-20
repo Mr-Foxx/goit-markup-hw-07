@@ -1,4 +1,10 @@
 .header {
+
+    margin-left: auto;
+        width: 1200px;
+        margin-right: auto;
+    
+
     border-bottom: 1px solid #ececec;
 
     &__container{
@@ -8,7 +14,3 @@
 
 }
 
-// .header__container {
-//     display: flex;
-//     align-items: center;
-// }

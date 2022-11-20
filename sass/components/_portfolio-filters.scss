@@ -21,7 +21,7 @@
     transition: background-color 250ms $accent-color, color 250ms $accent-color,
         box-shadow 250ms $accent-color;
 
-        &:hover, :focus{
+        &:hover, &:focus{
             color: $color-white;
                 background-color: $accent-color;
                 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,10 +42,3 @@
     margin-right: 4px;
 }
 
-// .portfolio-button__lyst:hover,
-// .portfolio-button__lyst:focus {
-//     color: #ffffff;
-//     background-color: var(--accent-color);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-// }

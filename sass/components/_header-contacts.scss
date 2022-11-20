@@ -13,15 +13,6 @@
     margin-right: 50px;
 }
 
-.navigation__list {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.contact__link {
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
 
 .contact__icon--envelope {
     fill: currentColor;
@@ -43,12 +34,8 @@
     color: $second-text-color;
     transition: background-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
 
-    &:hover, :focus{
+    &:hover, &:focus{
         color: $accent-color;
     }
 }
 
-// .contact__link:hover,
-// .contact__link:focus {
-//     color: var(--accent-color);
-// }

@@ -33,7 +33,7 @@
     color: rgba(255, 255, 255, 0.6);
     transition: background-color 250ms$cubic-bezier, color 250ms$cubic-bezier;
 
-    &:hover, :focus{
+    &:hover,    &:focus{
         color: $accent-color;
     }
 }
@@ -77,7 +77,7 @@
     margin-right: 10px;
     transition: background-color 250ms$cubic-bezier, color 250ms$cubic-bezier;
 
-    &:hover{
+    &:hover, &:focus{
         background-color: $accent-color;
     }
 }
@@ -177,24 +177,3 @@
 
 
 
-// .footer-address__link:hover,
-// .footer-address__link:focus {
-//     color: $accent-color;
-// }
-
-
-// .footer-form__button:hover {
-//     cursor: pointer;
-//     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-// }
-
-
-// .footer-subscribe__input:focus {
-//     outline: none;
-//     border-radius: 4px;
-//     border: solid 1px $accent-color;
-// }
-
-// .footer-join__link:hover {
-//     background-color: $accent-color;
-// }
